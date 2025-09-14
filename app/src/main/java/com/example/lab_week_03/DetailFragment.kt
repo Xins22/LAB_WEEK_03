@@ -5,8 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button // Added import for Button
 import android.widget.TextView
-import org.w3c.dom.Text
+import androidx.navigation.fragment.findNavController // Added import for findNavController
+// import org.w3c.dom.Text // Removed unused import
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -48,6 +50,11 @@ class DetailFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val coffeeId = arguments?.getInt(COFFEE_ID, 0) ?: 0
         setCoffeeData(coffeeId)
+
+        val backButton = view.findViewById<Button>(R.id.button_back)
+        backButton?.setOnClickListener {
+            findNavController().popBackStack()
+        }
     }
 
     fun setCoffeeData(id: Int) {
@@ -64,6 +71,14 @@ class DetailFragment : Fragment() {
                 coffeeTitle?.setText(R.string.latte_title)
                 coffeeDesc?.setText(R.string.latte_desc)
             }
+            R.id.espresso -> {
+                coffeeTitle?.setText(R.string.espresso_title)
+                coffeeDesc?.setText(R.string.espresso_desc)
+            }
+            R.id.cappuccino -> {
+                coffeeTitle?.setText(R.string.cappuccino_title)
+                coffeeDesc?.setText(R.string.cappuccino_desc)
+            }
         }
     }
 
@@ -78,7 +93,7 @@ class DetailFragment : Fragment() {
          */
         // TODO: Rename and change types and number of parameters
 
-        private const val COFFEE_ID = "COFFEE_ID"
+        private const val COFFEE_ID = "COFFEE_ID" // This should ideally be consistent with ListFragment's COFFEE_ID
         fun newInstance(coffeeId: Int) =
             DetailFragment().apply {
                 arguments = Bundle().apply {

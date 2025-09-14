@@ -13,5 +13,24 @@ extraction.)</string>
     <string name="latte_desc">A tall, mild \'milk coffee\' (about 150-300 ml). An
 espresso with steamed milk and only a little milk foam poured over it. Serve in a
 latte glass or a coffee cup. Flavored syrup can be added.</string>
+    <string name="espresso_title">ESPRESO</string>
+    <string name="espresso_desc">Espresso bisa dibilang merupakan bahan dasar dari
+        sebagian besar minuman kopi, mulai dari yang pembuatannya simpel hingga kompleks.
+        Jenis minuman kopi ini dibuat dengan cara mengekstrak biji kopi asli.
+        Pada tahap awal, biji kopi akan digiling hingga menjadi seperti bubuk yang halus.
+        Selanjutnya, bubuk kopi tersebut melalui proses tamping, yaitu dipadatkan.
+        Kemudian, barulah diseduh dengan tekanan dan suhu yang tinggi.
+        Hasil akhirnya, espresso memiliki warna yang cukup pekat, tekstur yang cenderung kental,
+        dan tingkat kafeinnya tinggi. </string>
+    <string name="cappuccino_title">CAPPUCCINO</string>
+    <string name="cappuccino_desc">Jenis minuman kopi satu ini juga tak jauh beda dengan Coffee Latte,
+        bahkan bahan dasarnya pun sama, yaitu espresso, steamed milk, dan milk foam. Nah,
+        yang membedakan keduanya adalah kadar perbandingan ketiga bahan tersebut.
+        Cappuccino memiliki jumlah kandungan bahan yang sama rata.Jadi, jika diasumsikan dalam satu gelas,
+        terdapat espresso, steamed milk, dan juga milk foam. Dengan demikian,
+        kadar busa susu pada minuman cappuccino cenderung lebih banyak dan tebal,
+        dibandingkan pada Coffee Latte. Hal ini menghasilkan minuman kopi susu dengan rasa kopi
+        yang lebih tajam dan lapisan busa yang lebih tebal di atasnya. Selain itu, beberapa orang
+        biasanya menambahkan bubuk cokelat di bagian atas foam saat membuat cappuccino.</string>
     <string name="coffee_list">Coffee List</string>
 </resources>
